@@ -4,7 +4,6 @@
 <?php $__env->slot('li_1'); ?> invoices <?php $__env->endSlot(); ?>
 <?php $__env->slot('title'); ?> Status Pembayaran <?php $__env->endSlot(); ?>
 <?php echo $__env->renderComponent(); ?>
-
 <div class="row justify-content-center">
 
         <div class="col-xxl-9">

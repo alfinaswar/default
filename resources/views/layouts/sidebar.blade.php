@@ -31,21 +31,28 @@
             <div id="two-column-menu">
             </div>
             <ul class="navbar-nav" id="navbar-nav">
+
                 <li class="menu-title"><span>@lang('translation.menu')</span></li>
  <li class="nav-item">
                     <a class="nav-link menu-link" href="{{route('dashboard')}}">
                         <i class="ri-honour-line"></i> <span>Dashboard</span>
                     </a>
                 </li>
- <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{route('list-program')}}">
-                        <i class="ri-honour-line"></i> <span>List Program</span>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                        <i class="ri-layout-3-line"></i> <span>Program</span><span class="badge badge-pill bg-danger"></span>
                     </a>
-                </li>
- <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{route('detail-program')}}">
-                        <i class="ri-honour-line"></i> <span>Detail Program</span>
-                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarLayouts">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{route('list-program')}}" target="_blank" class="nav-link">List Program</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{route('detail-program')}}" target="_blank" class="nav-link">Detail Program</a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </li>
  <li class="nav-item">
                     <a class="nav-link menu-link" href="{{route('status-pembayaran')}}">
@@ -63,9 +70,20 @@
                     </a>
                 </li>
  <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{route('template-create')}}">
-                        <i class="ri-honour-line"></i> <span>Template Create</span>
+                    <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
+                        <i class="ri-layout-3-line"></i> <span>Template Create</span><span class="badge badge-pill bg-danger"></span>
                     </a>
+                    <div class="collapse menu-dropdown" id="sidebarLayouts">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{route('template-create')}}" target="_blank" class="nav-link">Create</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{route('template-create')}}" target="_blank" class="nav-link">Read</a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </li>
 
                 </li>

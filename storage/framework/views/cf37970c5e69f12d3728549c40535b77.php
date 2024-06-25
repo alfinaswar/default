@@ -18,6 +18,9 @@
         <div class="col-xxl-3 col-lg-4">
             <div class="card pricing-box">
                 <div class="card-body bg-light m-2 p-4">
+                    <div class="mb-3">
+                        <img class="img-thumbnail" width="100%" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
+                    </div>
                     <div class="d-flex align-items-center mb-3">
                         <div class="flex-grow-1">
                             <h5 class="mb-0 fw-semibold">Target</h5>
@@ -49,6 +52,9 @@
  <div class="col-xxl-3 col-lg-4">
             <div class="card pricing-box">
                 <div class="card-body bg-light m-2 p-4">
+                      <div class="mb-3">
+                        <img class="img-thumbnail" width="100%" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
+                    </div>
                     <div class="d-flex align-items-center mb-3">
                         <div class="flex-grow-1">
                             <h5 class="mb-0 fw-semibold">Target</h5>
@@ -80,6 +86,9 @@
  <div class="col-xxl-3 col-lg-4">
             <div class="card pricing-box">
                 <div class="card-body bg-light m-2 p-4">
+                      <div class="mb-3">
+                        <img class="img-thumbnail" width="100%" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
+                    </div>
                     <div class="d-flex align-items-center mb-3">
                         <div class="flex-grow-1">
                             <h5 class="mb-0 fw-semibold">Target</h5>

@@ -5,7 +5,6 @@
 @slot('li_1') invoices @endslot
 @slot('title') Status Pembayaran @endslot
 @endcomponent
-
 <div class="row justify-content-center">
 
         <div class="col-xxl-9">
