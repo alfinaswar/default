@@ -1,5 +1,5 @@
 <!-- ========== App Menu ========== -->
-<div class="app-menu navbar-menu">
+<div class="app-menu navbar-menu" style="background-color: #116530;">
     <!-- LOGO -->
     <div class="navbar-brand-box">
         <!-- Dark Logo-->
@@ -20,7 +20,8 @@
                 <img src="{{ URL::asset('build/images/logo-light.png') }}" alt="" height="17">
             </span>
         </a>
-        <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
+        <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
+            id="vertical-hover">
             <i class="ri-record-circle-line"></i>
         </button>
     </div>
@@ -30,56 +31,66 @@
 
             <div id="two-column-menu">
             </div>
-            <ul class="navbar-nav" id="navbar-nav">
-
+            <ul class="navbar-nav" id="navbar-nav" >
                 <li class="menu-title"><span>@lang('translation.menu')</span></li>
- <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{route('dashboard')}}">
+                <li class="nav-item" >
+                    <a class="nav-link menu-link" href="{{ route('landing') }}"  style="color:#ffffff">
+                        <i class="ri-honour-line"></i> <span>Landing</span>
+                    </a>
+                </li>
+                <li class="menu-title"><span>@lang('translation.menu')</span></li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{ route('dashboard') }}" style="color:#ffffff">
                         <i class="ri-honour-line"></i> <span>Dashboard</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                        <i class="ri-layout-3-line"></i> <span>Program</span><span class="badge badge-pill bg-danger"></span>
+                    <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="sidebarLayouts" style="color:#ffffff">
+                        <i class="ri-layout-3-line"></i> <span>Program</span><span
+                            class="badge badge-pill bg-danger"></span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarLayouts">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{route('list-program')}}" target="_blank" class="nav-link">List Program</a>
+                                <a href="{{ route('list-program') }}" target="_blank" class="nav-link">List Program</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('detail-program')}}" target="_blank" class="nav-link">Detail Program</a>
+                                <a href="{{ route('detail-program') }}" target="_blank" class="nav-link">Detail
+                                    Program</a>
                             </li>
 
                         </ul>
                     </div>
                 </li>
- <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{route('status-pembayaran')}}">
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{ route('status-pembayaran') }}" style="color:#ffffff">
                         <i class="ri-honour-line"></i> <span>Status Pembayaran</span>
                     </a>
                 </li>
- <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{route('bukti-pembayaran')}}">
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{ route('bukti-pembayaran') }}" style="color:#ffffff">
                         <i class="ri-honour-line"></i> <span>Bukti Pembayaran</span>
                     </a>
                 </li>
- <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{route('sertifikat')}}">
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{ route('sertifikat') }}" style="color:#ffffff">
                         <i class="ri-honour-line"></i> <span>Sertifikat</span>
                     </a>
                 </li>
- <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLayouts">
-                        <i class="ri-layout-3-line"></i> <span>Template Create</span><span class="badge badge-pill bg-danger"></span>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarLayouts" data-bs-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="sidebarLayouts" style="color:#ffffff">
+                        <i class="ri-layout-3-line"></i> <span>Template Create</span><span
+                            class="badge badge-pill bg-danger"></span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarLayouts">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{route('template-create')}}" target="_blank" class="nav-link">Create</a>
+                                <a href="{{ route('template-create') }}" target="_blank" class="nav-link" >Create</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('template-create')}}" target="_blank" class="nav-link">Read</a>
+                                <a href="{{ route('template-table') }}" target="_blank" class="nav-link" >Read</a>
                             </li>
 
                         </ul>
@@ -94,6 +105,6 @@
     </div>
     <div class="sidebar-background"></div>
 </div>
-<!-- Left Sidebar End -->
+<!-- Left Sideba  r End -->
 <!-- Vertical Overlay-->
 <div class="vertical-overlay"></div>

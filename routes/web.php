@@ -25,8 +25,9 @@ Route::get('/status-pembayaran', [App\Http\Controllers\HomeController::class, 's
 Route::get('/bukti-pembayaran', [App\Http\Controllers\HomeController::class, 'buktiPembayaran'])->name('bukti-pembayaran');
 Route::get('/sertifikat', [App\Http\Controllers\HomeController::class, 'sertifikat'])->name('sertifikat');
 Route::get('/template-create', [App\Http\Controllers\HomeController::class, 'templateCreate'])->name('template-create');
+Route::get('/landing', [App\Http\Controllers\HomeController::class, 'landing'])->name('landing');
 Route::get('/template-update', [App\Http\Controllers\HomeController::class, 'templateUpdate'])->name('template-update');
-Route::get('/template-delete', [App\Http\Controllers\HomeController::class, 'templateDelete'])->name('template-delete');
+Route::get('/template-table', [App\Http\Controllers\HomeController::class, 'templateTable'])->name('template-table');
 
 //Update User Details
 Route::post('/update-profile/{id}', [App\Http\Controllers\HomeController::class, 'updateProfile'])->name('updateProfile');

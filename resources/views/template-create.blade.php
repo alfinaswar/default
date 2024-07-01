@@ -2,6 +2,11 @@
 @section('title')
     @lang('translation.basic-elements')
 @endsection
+@section('css')
+    <link href="{{ URL::asset('build/libs/quill/quill.core.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ URL::asset('build/libs/quill/quill.bubble.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ URL::asset('build/libs/quill/quill.snow.css') }}" rel="stylesheet" type="text/css" />
+@endsection
 @section('content')
     @component('components.breadcrumb')
         @slot('li_1')
@@ -11,7 +16,7 @@
             Template Create
         @endslot
     @endcomponent
-
+<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/42.0.0/ckeditor5.css">
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
@@ -195,140 +200,88 @@
                                     <label for="firstnamefloatingInput">Floating Input</label>
                                 </div>
                             </div>
+                             <div class="col-xxl-3 col-md-6">
+                                <div>
+                                    <label for="exampleInputrounded" class="form-label">Checkbox
+                                        Input</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxExample1" checked>
+                                    <label class="form-check-label" for="checkboxExample1">Check me out 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxExample2">
+                                    <label class="form-check-label" for="checkboxExample2">Check me out 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxExample3">
+                                    <label class="form-check-label" for="checkboxExample3">Check me out 3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxExample4">
+                                    <label class="form-check-label" for="checkboxExample4">Check me out 4</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkboxExample5">
+                                    <label class="form-check-label" for="checkboxExample5">Check me out 5</label>
+                                </div>
+                                </div>
+                            </div>
+                             <div class="col-xxl-3 col-md-6">
+                                <div>
+                                    <label for="exampleInputrounded" class="form-label">Radio Button
+                                        Input</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioExample" id="radioExample1" checked>
+                                    <label class="form-check-label" for="radioExample1">Pilihan 1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioExample" id="radioExample2">
+                                    <label class="form-check-label" for="radioExample2">Pilihan 2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioExample" id="radioExample3">
+                                    <label class="form-check-label" for="radioExample3">Pilihan 3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioExample" id="radioExample4">
+                                    <label class="form-check-label" for="radioExample4">Pilihan 4</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioExample" id="radioExample5">
+                                    <label class="form-check-label" for="radioExample5">Pilihan 5</label>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                               <div class="card-body">
+                    <p class="text-muted">Use <code>snow-editor</code> class to set snow editor.</p>
+                    <div class="snow-editor" style="height: 300px;">
+                        <h3><span class="ql-size-large">Hello World!</span></h3>
+                        <p><br></p>
+                        <h3>This is an simple editable area.</h3>
+                        <p><br></p>
+                        <ul>
+                            <li>
+                                Select a text to reveal the toolbar.
+                            </li>
+                            <li>
+                                Edit rich document on-the-fly, so elastic!
+                            </li>
+                        </ul>
+                        <p><br></p>
+                        <p>
+                            End of simple area
+                        </p>
+
+                    </div> <!-- end Snow-editor-->
+                </div><!-- end card-body -->
+                            </div>
                             <!--end col-->
                         </div>
                         <!--end row-->
                     </div>
                     <div class="d-none code-view">
-                        <pre class="language-markup" style="height: 450px;"><code>&lt;!-- Basic Input --&gt;
-&lt;div&gt;
-&lt;label for=&quot;basiInput&quot; class=&quot;form-label&quot;&gt;Basic Input&lt;/label&gt;
-&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;basiInput&quot;&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Input with Label --&gt;
-&lt;div&gt;
-&lt;label for=&quot;labelInput&quot; class=&quot;form-label&quot;&gt;Input with Label&lt;/label&gt;
-&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;labelInput&quot;&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Input with Placeholder --&gt;
-&lt;div&gt;
-&lt;label for=&quot;placeholderInput&quot; class=&quot;form-label&quot;&gt;Input with Placeholder&lt;/label&gt;
-&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;placeholderInput&quot; placeholder=&quot;Placeholder&quot;&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Input with Value --&gt;
-&lt;div&gt;
-&lt;label for=&quot;valueInput&quot; class=&quot;form-label&quot;&gt;Input with Value&lt;/label&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;valueInput&quot; value=&quot;Input value&quot;&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Readonly Plain Text Input --&gt;
-&lt;div&gt;
-&lt;label for=&quot;readonlyPlaintext&quot; class=&quot;form-label&quot;&gt;Readonly Plain Text Input&lt;/label&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control-plaintext&quot; id=&quot;readonlyPlaintext&quot; value=&quot;Readonly input&quot; readonly&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Readonly Input --&gt;
-&lt;div&gt;
-&lt;label for=&quot;readonlyInput&quot; class=&quot;form-label&quot;&gt;Readonly Input&lt;/label&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;readonlyInput&quot; value=&quot;Readonly input&quot; readonly&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Disabled Input --&gt;
-&lt;div&gt;
-&lt;label for=&quot;disabledInput&quot; class=&quot;form-label&quot;&gt;Disabled Input&lt;/label&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;disabledInput&quot; value=&quot;Disabled input&quot; disabled&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Input with Icon --&gt;
-&lt;div&gt;
-&lt;label for=&quot;iconInput&quot; class=&quot;form-label&quot;&gt;Input with Icon&lt;/label&gt;
-&lt;div class=&quot;form-icon&quot;&gt;
-&lt;input type=&quot;email&quot; class=&quot;form-control form-control-icon&quot; id=&quot;iconInput&quot; placeholder=&quot;example@gmail.com&quot;&gt;
-&lt;i class=&quot;ri-mail-unread-line&quot;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Input with Icon Right --&gt;
-&lt;div&gt;
-&lt;label for=&quot;iconrightInput&quot; class=&quot;form-label&quot;&gt;Input with Icon Right&lt;/label&gt;
-&lt;div class=&quot;form-icon right&quot;&gt;
-&lt;input type=&quot;email&quot; class=&quot;form-control form-control-icon&quot; id=&quot;iconrightInput&quot; placeholder=&quot;example@gmail.com&quot;&gt;
-&lt;i class=&quot;ri-mail-unread-line&quot;&gt;&lt;/i&gt;
-&lt;/div&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Input Date --&gt;
-&lt;div&gt;
-&lt;label for=&quot;exampleInputdate&quot; class=&quot;form-label&quot;&gt;Input Date&lt;/label&gt;
-&lt;input type=&quot;date&quot; class=&quot;form-control&quot; id=&quot;exampleInputdate&quot;&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Input Time --&gt;
-&lt;div&gt;
-&lt;label for=&quot;exampleInputtime&quot; class=&quot;form-label&quot;&gt;Input Time&lt;/label&gt;
-&lt;input type=&quot;time&quot; class=&quot;form-control&quot; id=&quot;exampleInputtime&quot; value=&quot;08:56 AM&quot;&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Input Password --&gt;
-&lt;div&gt;
-&lt;label for=&quot;exampleInputpassword&quot; class=&quot;form-label&quot;&gt;Input Password&lt;/label&gt;
-&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputpassword&quot; value=&quot;44512465&quot;&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Example Textarea --&gt;
-&lt;div&gt;
-&lt;label for=&quot;exampleFormControlTextarea5&quot; class=&quot;form-label&quot;&gt;Example Textarea&lt;/label&gt;
-&lt;textarea class=&quot;form-control&quot; id=&quot;exampleFormControlTextarea5&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Form Text --&gt;
-&lt;div&gt;
-&lt;label for=&quot;formtextInput&quot; class=&quot;form-label&quot;&gt;Form Text&lt;/label&gt;
-&lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;formtextInput&quot;&gt;
-&lt;div id=&quot;passwordHelpBlock&quot; class=&quot;form-text&quot;&gt;
-Must be 8-20 characters long.
-&lt;/div&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Color Picker --&gt;
-&lt;div&gt;
-&lt;label for=&quot;colorPicker&quot; class=&quot;form-label&quot;&gt;Color Picker&lt;/label&gt;
-&lt;input type=&quot;color&quot; class=&quot;form-control form-control-color w-100&quot; id=&quot;colorPicker&quot; value=&quot;#364574&quot;&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Input Border Style --&gt;
-&lt;div&gt;
-&lt;label for=&quot;borderInput&quot; class=&quot;form-label&quot;&gt;Input Border Style&lt;/label&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control border-dashed&quot; id=&quot;borderInput&quot; placeholder=&quot;Enter your name&quot;&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Datalist example --&gt;
-&lt;label for=&quot;exampleDataList&quot; class=&quot;form-label&quot;&gt;Datalist example&lt;/label&gt;
-&lt;input class=&quot;form-control&quot; list=&quot;datalistOptions&quot; id=&quot;exampleDataList&quot; placeholder=&quot;Search your country...&quot;&gt;
-&lt;datalist id=&quot;datalistOptions&quot;&gt;
-&lt;option value=&quot;Switzerland&quot;&gt;
-&lt;option value=&quot;New York&quot;&gt;
-&lt;option value=&quot;France&quot;&gt;
-&lt;option value=&quot;Spain&quot;&gt;
-&lt;option value=&quot;Chicago&quot;&gt;
-&lt;option value=&quot;Bulgaria&quot;&gt;
-&lt;option value=&quot;Hong Kong&quot;&gt;
-&lt;/datalist&gt;</code>
-
-<code>&lt;!-- Rounded Input --&gt;
-&lt;div&gt;
-&lt;label for=&quot;exampleInputrounded&quot; class=&quot;form-label&quot;&gt;Rounded Input&lt;/label&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control rounded-pill&quot; id=&quot;exampleInputrounded&quot; placeholder=&quot;Enter your name&quot;&gt;
-&lt;/div&gt;</code>
-
-<code>&lt;!-- Floating Input --&gt;
-&lt;div class=&quot;form-floating&quot;&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;firstnamefloatingInput&quot; placeholder=&quot;Enter your firstname&quot;&gt;
-&lt;label for=&quot;firstnamefloatingInput&quot;&gt;Floating Input&lt;/label&gt;
-&lt;/div&gt;</code></pre>
+                        <pre class="language-markup" style="height: 450px;"></pre>
                     </div>
                 </div>
             </div>
@@ -338,16 +291,18 @@ Must be 8-20 characters long.
     <!--end row-->
 
 
- 
+
 
         <!--end row-->
-
-
-
-
 
 @endsection
 @section('script')
     <script src="{{ URL::asset('build/libs/prismjs/prism.js') }}"></script>
     <script src="{{ URL::asset('build/js/app.js') }}"></script>
+    <script src="{{ URL::asset('build/libs/@ckeditor/ckeditor5-build-classic/build/ckeditor.js') }}"></script>
+    <script src="{{ URL::asset('build/libs/quill/quill.min.js') }}"></script>
+    <script src="{{ URL::asset('build/js/pages/form-editor.init.js') }}"></script>
+    <script src="{{ URL::asset('build/js/app.js') }}"></script>
+
 @endsection
+

@@ -66,13 +66,17 @@ class HomeController extends Controller
     {
         return view('template-create');
     }
-    public function templateUpdate()
+    public function templateTable()
     {
-        return view('template-update');
+        return view('template-table');
     }
     public function templateDelete()
     {
         return view('template-delete');
+    }
+    public function landing()
+    {
+        return view('landing');
     }
 
     /*Language Translation*/
