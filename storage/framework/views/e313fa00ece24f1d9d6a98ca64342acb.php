@@ -14,7 +14,15 @@
 
 
     <div class="row">
-        <div class="card joblist-card">
+    <div class="card">
+    <div class="card-body">
+        <div class="container">
+           <div class="row">
+               <div class="col-4">
+                <img src="<?php echo e(asset('images/FOOD.png')); ?>" alt="" class="img-fluid" height="100%">
+               </div>
+               <div class="col-8">
+                      <div class="card joblist-card">
             <div class="card-body">
                 <div class="d-flex mb-4">
                     <div class="avatar-sm">
@@ -52,6 +60,15 @@
                 </div>
             </div>
         </div>
+               </div>
+
+           </div>
+        </div>
+
+    </div>
+    </div>
+
+
         <div class="card">
                 <div class="card-body">
 
