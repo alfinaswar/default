@@ -19,7 +19,7 @@
             <div class="card pricing-box">
                 <div class="card-body bg-light m-2 p-4">
                     <div class="mb-3">
-                        <img class="img-thumbnail" width="100%" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
+                        <img class="" width="100%" height="250em" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <div class="flex-grow-1">
@@ -31,6 +31,12 @@
 
                         </div>
                     </div>
+                    <span class="text-danger text-end fw-bold">Progres saat ini 70%</span>
+                    <div class="progress progress-xl mb-2">
+                                <div class="progress-bar bg-danger" role="progressbar"
+                                    style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                     </div>
 <p class="text-muted">Program ini ditujukan untuk individu yang ingin memulai dan terbiasa dengan alat kami.</p>
                     <div class="mb-3">
                         <h5 class="mb-0 fw-semibold">Nama Program</h5>
@@ -53,7 +59,7 @@
             <div class="card pricing-box">
                 <div class="card-body bg-light m-2 p-4">
                       <div class="mb-3">
-                        <img class="img-thumbnail" width="100%" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
+                        <img class="" width="100%" height="250em" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <div class="flex-grow-1">
@@ -65,6 +71,12 @@
 
                         </div>
                     </div>
+                    <span class="text-danger text-end fw-bold">Progres saat ini 70%</span>
+                    <div class="progress progress-xl mb-2">
+                                <div class="progress-bar bg-danger" role="progressbar"
+                                    style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                     </div>
 <p class="text-muted">Program ini ditujukan untuk individu yang ingin memulai dan terbiasa dengan alat kami.</p>
                     <div class="mb-3">
                         <h5 class="mb-0 fw-semibold">Nama Program</h5>
@@ -87,7 +99,7 @@
             <div class="card pricing-box">
                 <div class="card-body bg-light m-2 p-4">
                       <div class="mb-3">
-                        <img class="img-thumbnail" width="100%" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
+                        <img class="" width="100%" height="250em" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <div class="flex-grow-1">
@@ -99,6 +111,12 @@
 
                         </div>
                     </div>
+                    <span class="text-danger text-end fw-bold">Progres saat ini 70%</span>
+                     <div class="progress progress-xl mb-2">
+                                <div class="progress-bar bg-danger" role="progressbar"
+                                    style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                     </div>
 <p class="text-muted">Program ini ditujukan untuk individu yang ingin memulai dan terbiasa dengan alat kami.</p>
                     <div class="mb-3">
                         <h5 class="mb-0 fw-semibold">Nama Program</h5>
