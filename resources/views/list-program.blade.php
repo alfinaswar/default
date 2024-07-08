@@ -20,7 +20,7 @@
             <div class="card pricing-box">
                 <div class="card-body bg-light m-2 p-4">
                     <div class="mb-3">
-                        <img class="" width="100%" height="250em" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
+                        <img class="" width="100%" height="250em" src="{{asset('build/images/bg-d.png')}}" data-holder-rendered="true" style="width: 100%; height: 300px; object-fit: cover;">
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <div class="flex-grow-1">
@@ -60,7 +60,7 @@
             <div class="card pricing-box">
                 <div class="card-body bg-light m-2 p-4">
                       <div class="mb-3">
-                        <img class="" width="100%" height="250em" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
+                        <img class="" width="100%" height="250em" src="{{asset('build/icons/file.png')}}" data-holder-rendered="true" style="width: 100%; height: 300px; object-fit: cover;">
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <div class="flex-grow-1">
@@ -100,7 +100,7 @@
             <div class="card pricing-box">
                 <div class="card-body bg-light m-2 p-4">
                       <div class="mb-3">
-                        <img class="" width="100%" height="250em" src="http://127.0.0.1:8000/build/images/small/img-3.jpg" data-holder-rendered="true">
+                        <img class="" height="250em" src="{{asset('images/gambar1.png')}}" data-holder-rendered="true" style="width: 100%; height: 300px; object-fit: cover;">
                     </div>
                     <div class="d-flex align-items-center mb-3">
                         <div class="flex-grow-1">
