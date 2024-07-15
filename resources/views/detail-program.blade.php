@@ -41,10 +41,19 @@
                                 class="icon-off"><i class="ri-bookmark-fill"></i></span> </button> </div>
                 </div>
 
-                <div><span class="badge bg-primary-subtle text-primary me-1" style="font-size: 15px;">Ayo Berwakaf</span></div>
+               <div class="card card-primary">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1 ms-3">
+                                    <p class="card-text"><span class="fw-medium">Ayo Berwakaf</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 <div class="mt-3">
                     <h5 class="mb-0 fw-semibold">Deskripsi</h5>
-                    <p class="text-muted">Program ini bertujuan untuk mengumpulkan dana untuk kegiatan sosial. Mari berwakaf dan berkontribusi pada kegiatan ini.</p>
+                    <p class="text-muted">  Program ini bertujuan untuk mengumpulkan dana untuk kegiatan sosial. Mari berwakaf dan berkontribusi pada kegiatan ini.</p>
                 </div>
                 <div class="mt-3">
                     <h5 class="mb-0 fw-semibold">Tab Berita dan Laporan Penggunaan</h5>
